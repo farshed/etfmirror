@@ -6,7 +6,7 @@ const dist = join(process.cwd(), 'app', 'dist');
 const indexHtml = Bun.file(join(dist, 'index.html'));
 
 const server = Bun.serve({
-	port: 5000,
+	port: 5100,
 	routes: {
 		'/api/etfs': { GET: listETFs }
 	},
