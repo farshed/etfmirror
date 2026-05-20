@@ -142,9 +142,9 @@ export function EtfReplicator() {
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight">PSX ETF Replicator</h2>
+        <h2 className="text-2xl font-semibold tracking-tight">PSX ETF Replicator </h2>
         <p className="text-sm text-muted-foreground">
-          Select an ETF and enter your budget or desired units to see which stocks to buy.
+          Select an ETF and enter your budget or desired units to see which stocks to buy to replicate the ETF.
         </p>
       </div>
 
