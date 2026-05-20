@@ -86,7 +86,7 @@ export function EtfReplicator() {
           `You need at least Rs ${minRequired.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
-          })} to purchase the minimum 500 units of ${selectedEtf.name}.`
+          })} to replicate the minimum 500 units of ${selectedEtf.name}.`
         )
         return
       }
