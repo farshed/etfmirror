@@ -7,7 +7,7 @@ export async function scrapePsxEtfs() {
 		).then((r) => r.json());
 
 		const etfList = (response?.response?.amcs ?? [])
-			.filter((x: any) => ['HBLTETF'].includes(x.symbol))
+			.filter((x: any) => !['HBLTETF'].includes(x.symbol))
 			.map((x: any) => ({
 				symbol: x.symbol,
 				price: x.curr
