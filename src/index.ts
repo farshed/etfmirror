@@ -30,6 +30,6 @@ const server = Bun.serve({
 
 console.log(`Server running at http://${server.hostname}:${server.port}`);
 
-Bun.cron('0 0 * * *', async () => {
+Bun.cron('* * * * *', async () => {
 	await scrapePsxEtfs();
 });
