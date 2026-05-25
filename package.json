@@ -16,6 +16,7 @@
 		"typescript": "^5"
 	},
 	"dependencies": {
-		"cheerio": "^1.2.0"
+		"cheerio": "^1.2.0",
+		"node-cron": "^4.2.1"
 	}
 }

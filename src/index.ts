@@ -1,4 +1,5 @@
 import { join } from 'path';
+import cron from 'node-cron';
 import { listETFs } from './routes/etfs';
 import { scrapePsxEtfs } from './scrape';
 
@@ -30,6 +31,6 @@ const server = Bun.serve({
 
 console.log(`Server running at http://${server.hostname}:${server.port}`);
 
-Bun.cron('0 0 * * *', async () => {
-	await scrapePsxEtfs();
+cron.schedule('0 0 * * *', () => {
+	scrapePsxEtfs();
 });
