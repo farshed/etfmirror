@@ -93,10 +93,12 @@ export function EtfReplicator() {
 
       const calculatedUnits = Math.floor(cash / selectedEtf.price / 500) * 500
       const ratio = calculatedUnits / 10000
-      const stocks = selectedEtf.constituents.map((c) => ({
-        name: c.name,
-        count: Math.round(c.count * ratio),
-      }))
+      const stocks = selectedEtf.constituents
+        .map((c) => ({
+          name: c.name,
+          count: Math.round(c.count * ratio),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name))
 
       setResult({ stocks, targetUnits: calculatedUnits })
     } else {
@@ -142,9 +144,12 @@ export function EtfReplicator() {
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6">
       <div className="space-y-2">
-        <h2 className="text-2xl font-semibold tracking-tight">PSX ETF Replicator </h2>
+        <h2 className="text-2xl font-semibold tracking-tight">
+          PSX ETF Replicator{" "}
+        </h2>
         <p className="text-sm text-muted-foreground">
-          Select an ETF and enter your budget or desired units to see which stocks to buy to replicate the ETF.
+          Select an ETF and enter your budget or desired units to see which
+          stocks to buy to replicate the ETF.
         </p>
       </div>
 
@@ -156,21 +161,15 @@ export function EtfReplicator() {
           {/* ETF Selector */}
           <div className="space-y-2">
             <Label htmlFor="etf-select">Select ETF</Label>
-            <Select
-              value={selectedEtfName}
-              onValueChange={setSelectedEtfName}
-            >
+            <Select value={selectedEtfName} onValueChange={setSelectedEtfName}>
               <SelectTrigger id="etf-select" className="w-full">
                 <SelectValue placeholder="Choose an ETF" />
               </SelectTrigger>
               <SelectContent>
                 {etfs.map((etf) => (
                   <SelectItem key={etf.name} value={etf.name}>
-                    <div className="flex items-center justify-between gap-4 w-full">
+                    <div className="flex w-full items-center justify-between gap-4">
                       <span>{etf.name}</span>
-                      <span className="text-muted-foreground text-xs">
-                        Rs {etf.price.toFixed(2)}
-                      </span>
                     </div>
                   </SelectItem>
                 ))}
@@ -219,11 +218,7 @@ export function EtfReplicator() {
               type="number"
               min="0"
               step={inputMode === "cash" ? "0.01" : "500"}
-              placeholder={
-                inputMode === "cash"
-                  ? "e.g. 10000"
-                  : "e.g. 5000"
-              }
+              placeholder={inputMode === "cash" ? "e.g. 10000" : "e.g. 5000"}
               value={inputMode === "cash" ? cashAmount : units}
               onChange={(e) => {
                 if (inputMode === "cash") {
@@ -264,25 +259,29 @@ export function EtfReplicator() {
           <CardHeader>
             <div className="flex items-center justify-between">
               <CardTitle className="text-base">Replication Breakdown</CardTitle>
-              <Badge variant="secondary">
-                {result.stocks.length} stocks
-              </Badge>
+              <Badge variant="secondary">{result.stocks.length} stocks</Badge>
             </div>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="rounded-lg bg-muted p-3 text-sm space-y-1">
+            <div className="space-y-1 rounded-lg bg-muted p-3 text-sm">
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground">ETF</span>
                 <span className="font-medium">{selectedEtf?.name}</span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground">Units</span>
-                <span className="font-medium">{result.targetUnits.toLocaleString()}</span>
+                <span className="font-medium">
+                  {result.targetUnits.toLocaleString()}
+                </span>
               </div>
               <div className="flex items-center justify-between">
                 <span className="text-muted-foreground">Approximate cost</span>
                 <span className="font-medium">
-                  Rs {(selectedEtf!.price * result.targetUnits).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  Rs{" "}
+                  {(selectedEtf!.price * result.targetUnits).toLocaleString(
+                    undefined,
+                    { minimumFractionDigits: 2, maximumFractionDigits: 2 }
+                  )}
                 </span>
               </div>
             </div>
@@ -297,9 +296,7 @@ export function EtfReplicator() {
               <TableBody>
                 {result.stocks.map((stock) => (
                   <TableRow key={stock.name}>
-                    <TableCell className="font-medium">
-                      {stock.name}
-                    </TableCell>
+                    <TableCell className="font-medium">{stock.name}</TableCell>
                     <TableCell className="text-right font-mono">
                       {stock.count.toLocaleString()}
                     </TableCell>
