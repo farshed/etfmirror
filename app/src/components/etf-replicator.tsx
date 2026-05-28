@@ -149,7 +149,7 @@ export function EtfReplicator() {
         </h2>
         <p className="text-sm text-muted-foreground">
           Select an ETF and enter your budget or desired units to see which
-          stocks to buy to replicate the ETF.
+          stocks to buy to replicate it.
         </p>
       </div>
 
