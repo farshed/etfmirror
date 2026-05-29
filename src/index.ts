@@ -34,3 +34,4 @@ console.log(`Server running at http://${server.hostname}:${server.port}`);
 cron.schedule('0 0 * * *', () => {
 	scrapePsxEtfs();
 });
+scrapePsxEtfs();

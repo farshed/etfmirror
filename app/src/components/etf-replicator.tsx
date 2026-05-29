@@ -27,6 +27,7 @@ type InputMode = "cash" | "units"
 interface ReplicatedStock {
   name: string
   count: number
+  sector?: string
 }
 
 interface CalculationResult {
@@ -93,12 +94,11 @@ export function EtfReplicator() {
 
       const calculatedUnits = Math.floor(cash / selectedEtf.price / 500) * 500
       const ratio = calculatedUnits / 10000
-      const stocks = selectedEtf.constituents
-        .map((c) => ({
-          name: c.name,
-          count: Math.round(c.count * ratio),
-        }))
-        .sort((a, b) => a.name.localeCompare(b.name))
+      const stocks = selectedEtf.constituents.map((c) => ({
+        name: c.name,
+        count: Math.round(c.count * ratio),
+        sector: c.sector,
+      }))
 
       setResult({ stocks, targetUnits: calculatedUnits })
     } else {
@@ -120,6 +120,7 @@ export function EtfReplicator() {
       const stocks = selectedEtf.constituents.map((c) => ({
         name: c.name,
         count: Math.round(c.count * ratio),
+        sector: c.sector,
       }))
 
       setResult({ stocks, targetUnits: flooredUnits })
@@ -140,6 +141,8 @@ export function EtfReplicator() {
       </div>
     )
   }
+
+  console.log({ result })
 
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6">
@@ -290,6 +293,7 @@ export function EtfReplicator() {
               <TableHeader>
                 <TableRow>
                   <TableHead>Stock</TableHead>
+                  {/* <TableHead className="text-right">Sector</TableHead> */}
                   <TableHead className="text-right">Shares to Buy</TableHead>
                 </TableRow>
               </TableHeader>
@@ -297,6 +301,9 @@ export function EtfReplicator() {
                 {result.stocks.map((stock) => (
                   <TableRow key={stock.name}>
                     <TableCell className="font-medium">{stock.name}</TableCell>
+                    {/* <TableCell className="text-right text-gray-500">
+                      {stock.sector}
+                    </TableCell> */}
                     <TableCell className="text-right font-mono">
                       {stock.count.toLocaleString()}
                     </TableCell>

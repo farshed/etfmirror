@@ -1,6 +1,7 @@
 export interface ETFConstituent {
   name: string
   count: number
+  sector?: string
 }
 
 export interface ETF {
