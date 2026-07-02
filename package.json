@@ -7,7 +7,8 @@
 		"dev": "(cd app && bun dev) & bun --watch src/index.ts",
 		"prod": "bun run build && bun start",
 		"build": "cd app && bun install && bun run build && cd .. && bun install && bun build src/index.ts --outdir=dist --target=bun",
-		"start": "bun dist/index.js"
+		"start": "bun dist/index.js",
+		"scrape": "bun scripts/scrape.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"
