@@ -187,7 +187,7 @@ export function EtfReplicator() {
               <button
                 type="button"
                 onClick={() => setInputMode("cash")}
-                className={`flex flex-1 items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm transition-colors ${
+                className={`flex flex-1 items-center justify-center gap-2 border px-3 py-2 text-sm transition-colors ${
                   inputMode === "cash"
                     ? "border-primary bg-primary text-primary-foreground"
                     : "border-border bg-card text-foreground hover:bg-accent"
@@ -199,7 +199,7 @@ export function EtfReplicator() {
               <button
                 type="button"
                 onClick={() => setInputMode("units")}
-                className={`flex flex-1 items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm transition-colors ${
+                className={`flex flex-1 items-center justify-center gap-2 border px-3 py-2 text-sm transition-colors ${
                   inputMode === "units"
                     ? "border-primary bg-primary text-primary-foreground"
                     : "border-border bg-card text-foreground hover:bg-accent"
