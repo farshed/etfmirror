@@ -11,6 +11,6 @@ export interface ETF {
 }
 
 export async function fetchETFs(): Promise<ETF[]> {
-  const response = await fetch("/api/etfs").then((r) => r.json())
+  const response = await fetch("https://mttgttziavgglvmjwhha.supabase.co/functions/v1/etfs").then((r) => r.json()).catch(() => [])
   return response
 }

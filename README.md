@@ -1,15 +1,21 @@
-# etfmirror
+# React + TypeScript + Vite + shadcn/ui
 
-To install dependencies:
+This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
 
-```bash
-bun install
-```
+## Adding components
 
-To run:
+To add components to your app, run the following command:
 
 ```bash
-bun run index.ts
+npx shadcn@latest add button
 ```
 
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+This will place the ui components in the `src/components` directory.
+
+## Using components
+
+To use the components in your app, import them as follows:
+
+```tsx
+import { Button } from "@/components/ui/button"
+```
