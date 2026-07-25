@@ -6,18 +6,13 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), 
+  base: "/",
+  plugins: [react(), tailwindcss(),
     // analyzer()
   ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
-  },
-  server: {
-    port: 5173,
-    proxy: {
-      "/api": "http://localhost:5100",
     },
   },
 })
