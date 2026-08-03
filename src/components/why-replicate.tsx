@@ -67,7 +67,7 @@ export function WhyReplicate() {
         <Accordion type="single" collapsible>
           <AccordionItem value="why" className="border-b-0">
             <AccordionTrigger className="py-0 text-sm font-normal">
-              Why replicate an ETF?
+              Why replicate ETFs?
             </AccordionTrigger>
             <AccordionContent className="space-y-6 pt-5 pb-1">
               {reasons.map(({ icon: Icon, title, description }) => (

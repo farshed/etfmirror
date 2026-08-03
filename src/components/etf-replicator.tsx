@@ -339,7 +339,7 @@ export function EtfReplicator() {
                     {/* <TableCell className="text-right text-gray-500">
                       {stock.sector}
                     </TableCell> */}
-                    <TableCell className="text-right font-mono">
+                    <TableCell className="text-right font-mono font-semibold">
                       {stock.count.toLocaleString()}
                     </TableCell>
                   </TableRow>
