@@ -56,7 +56,7 @@ const reasons: Reason[] = [
     icon: Scissors,
     title: "Room for tax-loss harvesting",
     description:
-      "When you own the constituents individually, you can realise a loss on the ones that are down to offset gains elsewhere. Inside an ETF those losses are netted away in a single position you cannot touch.",
+      "You can realise a loss on individual stocks that are down to offset gains elsewhere. Inside an ETF those losses are netted away in a single position you cannot touch.",
   },
 ]
 

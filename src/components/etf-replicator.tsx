@@ -36,6 +36,26 @@ interface CalculationResult {
   targetUnits: number
 }
 
+interface CalculationState {
+  result: CalculationResult | null
+  error: string | null
+}
+
+function createCalculationResult(
+  etf: ETF,
+  targetUnits: number
+): CalculationResult {
+  const ratio = targetUnits / 10000
+  const stocks = etf.constituents.map((constituent) => ({
+    name: constituent.name,
+    count: Math.round(constituent.count * ratio),
+    sector: constituent.sector,
+    logo: constituent.logo,
+  }))
+
+  return { stocks, targetUnits }
+}
+
 export function EtfReplicator() {
   const [etfs, setEtfs] = useState<ETF[]>([])
   const [loading, setLoading] = useState(true)
@@ -43,8 +63,7 @@ export function EtfReplicator() {
   const [inputMode, setInputMode] = useState<InputMode>("cash")
   const [cashAmount, setCashAmount] = useState<string>("")
   const [units, setUnits] = useState<string>("")
-  const [result, setResult] = useState<CalculationResult | null>(null)
-  const [error, setError] = useState<string | null>(null)
+  const [hasCalculated, setHasCalculated] = useState(false)
 
   useEffect(() => {
     fetchETFs()
@@ -62,73 +81,62 @@ export function EtfReplicator() {
     [etfs, selectedEtfName]
   )
 
-  // Clear results when inputs change so stale data doesn't show
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setResult(null)
-    setError(null)
-  }, [selectedEtfName, inputMode, cashAmount, units])
-
-  const handleCalculate = () => {
-    if (!selectedEtf) return
-
-    setResult(null)
-    setError(null)
+  const calculation = useMemo<CalculationState>(() => {
+    if (!selectedEtf) return { result: null, error: null }
 
     if (inputMode === "cash") {
       const cash = parseFloat(cashAmount)
       if (isNaN(cash) || cash <= 0) {
-        setError("Please enter a valid cash amount greater than zero.")
-        return
+        return {
+          result: null,
+          error: "Please enter a valid cash amount greater than zero.",
+        }
       }
 
       const minRequired = selectedEtf.price * 500
       if (cash < minRequired) {
-        setError(
-          `You need at least Rs ${minRequired.toLocaleString(undefined, {
+        return {
+          result: null,
+          error: `You need at least Rs ${minRequired.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
-          })} to replicate the minimum 500 units of ${selectedEtf.name}.`
-        )
-        return
+          })} to replicate the minimum 500 units of ${selectedEtf.name}.`,
+        }
       }
 
       const calculatedUnits = Math.floor(cash / selectedEtf.price / 500) * 500
-      const ratio = calculatedUnits / 10000
-      const stocks = selectedEtf.constituents.map((c) => ({
-        name: c.name,
-        count: Math.round(c.count * ratio),
-        sector: c.sector,
-        logo: c.logo,
-      }))
-
-      setResult({ stocks, targetUnits: calculatedUnits })
-    } else {
-      const targetUnits = parseFloat(units)
-      if (isNaN(targetUnits) || targetUnits <= 0) {
-        setError("Please enter a valid number of units greater than zero.")
-        return
+      return {
+        result: createCalculationResult(selectedEtf, calculatedUnits),
+        error: null,
       }
-
-      if (targetUnits < 500) {
-        setError(
-          `Minimum purchase is 500 units. You entered ${Math.floor(targetUnits).toLocaleString()}.`
-        )
-        return
-      }
-
-      const flooredUnits = Math.floor(targetUnits / 500) * 500
-      const ratio = flooredUnits / 10000
-      const stocks = selectedEtf.constituents.map((c) => ({
-        name: c.name,
-        count: Math.round(c.count * ratio),
-        sector: c.sector,
-        logo: c.logo,
-      }))
-
-      setResult({ stocks, targetUnits: flooredUnits })
     }
-  }
+
+    const targetUnits = parseFloat(units)
+    if (isNaN(targetUnits) || targetUnits <= 0) {
+      return {
+        result: null,
+        error: "Please enter a valid number of units greater than zero.",
+      }
+    }
+
+    if (targetUnits < 500) {
+      return {
+        result: null,
+        error: `Minimum purchase is 500 units. You entered ${Math.floor(targetUnits).toLocaleString()}.`,
+      }
+    }
+
+    const flooredUnits = Math.floor(targetUnits / 500) * 500
+    return {
+      result: createCalculationResult(selectedEtf, flooredUnits),
+      error: null,
+    }
+  }, [selectedEtf, inputMode, cashAmount, units])
+
+  const result = hasCalculated ? calculation.result : null
+  const error = hasCalculated ? calculation.error : null
+
+  const handleCalculate = () => setHasCalculated(true)
 
   const isCalculateDisabled = useMemo(() => {
     if (inputMode === "cash") {
@@ -149,8 +157,6 @@ export function EtfReplicator() {
       </div>
     )
   }
-
-  console.log({ result })
 
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6">
@@ -228,12 +234,14 @@ export function EtfReplicator() {
               id="value-input"
               type="number"
               min="0"
-              step={inputMode === "cash" ? "0.01" : "500"}
+              step={inputMode === "cash" ? "5000" : "500"}
               placeholder={inputMode === "cash" ? "e.g. 10000" : "e.g. 5000"}
               value={inputMode === "cash" ? cashAmount : units}
               onChange={(e) => {
                 if (inputMode === "cash") {
-                  setCashAmount(e.target.value)
+                  if (/^\d*$/.test(e.target.value)) {
+                    setCashAmount(e.target.value)
+                  }
                 } else {
                   setUnits(e.target.value)
                 }
