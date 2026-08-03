@@ -9,6 +9,7 @@ import {
   SlidersHorizontal,
   Vote,
   TrendingDown,
+  HandCoins,
   Wallet,
   Scissors,
   type LucideIcon,
@@ -22,28 +23,34 @@ interface Reason {
 
 const reasons: Reason[] = [
   {
-    icon: SlidersHorizontal,
-    title: "Full control over your portfolio",
+    icon: TrendingDown,
+    title: "No management fee eating into compounding",
     description:
-      "Hold the index on your own terms. Exclude sectors or individual stocks you would rather not own, overweight the ones you believe in, and rebalance on your own schedule instead of the fund's.",
+      "The expense ratio is charged every year on your entire holding, not just on your gains. Avoiding it leaves more capital invested, and the difference widens the longer your horizon.",
   },
   {
     icon: Vote,
     title: "Direct ownership of the underlying stocks",
     description:
-      "The shares sit in your own CDC account, so you get voting rights and the right to participate in general meetings. An ETF holder owns units of the fund, while the fund owns the companies.",
+      "You get direct ownership of the companies you hold, so you get voting rights and the right to participate in general meetings.",
   },
   {
-    icon: TrendingDown,
-    title: "No management fee eating into compounding",
+    icon: HandCoins,
+    title: "Receive dividends as they are paid",
     description:
-      "An expense ratio is charged every year on your entire holding, not just on your gains. Skipping it leaves more capital invested, and the difference widens the longer you hold.",
+      "With direct ownership, dividends reach you when each stock pays them. You do not have to wait for the ETF's annual dividend distribution.",
   },
   {
     icon: Wallet,
-    title: "No cash drag",
+    title: "No cash component",
     description:
-      "Funds keep a slice of assets in cash to handle redemptions and expenses, and that slice earns no market return. Replicating directly keeps every rupee in the market.",
+      "Funds keep a slice of your investment as cash to handle redemptions and expenses, and that slice just sits there making no return. Replication keeps every rupee in the market.",
+  },
+  {
+    icon: SlidersHorizontal,
+    title: "Full control over your portfolio",
+    description:
+      "Hold the index on your own terms. You can exclude sectors or individual stocks you would rather not own and rebalance on your own schedule instead of the fund's.",
   },
   {
     icon: Scissors,

@@ -2,6 +2,7 @@ export interface ETFConstituent {
   name: string
   count: number
   sector?: string
+  logo?: string
 }
 
 export interface ETF {
@@ -11,6 +12,10 @@ export interface ETF {
 }
 
 export async function fetchETFs(): Promise<ETF[]> {
-  const response = await fetch("https://mttgttziavgglvmjwhha.supabase.co/functions/v1/etfs").then((r) => r.json()).catch(() => [])
+  const response = await fetch(
+    "https://mttgttziavgglvmjwhha.supabase.co/functions/v1/etfs"
+  )
+    .then((r) => r.json())
+    .catch(() => [])
   return response
 }

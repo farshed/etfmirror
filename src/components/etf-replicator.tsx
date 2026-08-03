@@ -28,6 +28,7 @@ interface ReplicatedStock {
   name: string
   count: number
   sector?: string
+  logo?: string
 }
 
 interface CalculationResult {
@@ -98,6 +99,7 @@ export function EtfReplicator() {
         name: c.name,
         count: Math.round(c.count * ratio),
         sector: c.sector,
+        logo: c.logo,
       }))
 
       setResult({ stocks, targetUnits: calculatedUnits })
@@ -121,6 +123,7 @@ export function EtfReplicator() {
         name: c.name,
         count: Math.round(c.count * ratio),
         sector: c.sector,
+        logo: c.logo,
       }))
 
       setResult({ stocks, targetUnits: flooredUnits })
@@ -136,8 +139,13 @@ export function EtfReplicator() {
 
   if (loading) {
     return (
-      <div className="flex min-h-[300px] items-center justify-center">
+      <div
+        className="fixed inset-0 z-50 flex min-h-svh items-center justify-center bg-background"
+        role="status"
+        aria-label="Loading ETF data"
+      >
         <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+        <span className="sr-only">Loading ETF data</span>
       </div>
     )
   }
@@ -231,6 +239,12 @@ export function EtfReplicator() {
                 }
               }}
             />
+            {inputMode === "cash" && selectedEtf && (
+              <p className="text-xs text-muted-foreground">
+                Minimum cash amount: Rs.{" "}
+                {Math.ceil(selectedEtf.price * 500).toLocaleString()}
+              </p>
+            )}
             {inputMode === "units" && (
               <p className="text-xs text-muted-foreground">
                 Units must be in multiples of 500
@@ -300,7 +314,20 @@ export function EtfReplicator() {
               <TableBody>
                 {result.stocks.map((stock) => (
                   <TableRow key={stock.name}>
-                    <TableCell className="font-medium">{stock.name}</TableCell>
+                    <TableCell>
+                      <div className="flex items-center gap-3 font-medium">
+                        {stock.logo && (
+                          <img
+                            src={stock.logo}
+                            alt=""
+                            className="h-8 w-8 shrink-0 rounded-md bg-white object-contain"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        )}
+                        <span>{stock.name}</span>
+                      </div>
+                    </TableCell>
                     {/* <TableCell className="text-right text-gray-500">
                       {stock.sector}
                     </TableCell> */}
