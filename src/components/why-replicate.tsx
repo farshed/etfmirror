@@ -38,7 +38,7 @@ const reasons: Reason[] = [
     icon: HandCoins,
     title: "Receive dividends as they are paid",
     description:
-      "With direct ownership, dividends reach you when each stock pays them. You do not have to wait for the ETF's annual dividend distribution.",
+      "With direct ownership, dividends reach you as soon as they are paid. You do not have to wait for the ETF's annual dividend distribution.",
   },
   {
     icon: Wallet,
