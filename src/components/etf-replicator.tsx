@@ -1,5 +1,5 @@
-import { useState, useEffect, useMemo } from "react"
-import { fetchETFs, type ETF } from "@/lib/etf-data"
+import { useState, useMemo } from "react"
+import { etfData, type ETF } from "@/lib/etf-data"
 import {
   Select,
   SelectContent,
@@ -20,15 +20,15 @@ import {
 } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Loader2, Banknote, Layers, AlertCircle } from "lucide-react"
+import { Banknote, Layers, AlertCircle } from "lucide-react"
 
 type InputMode = "cash" | "units"
 
 interface ReplicatedStock {
   name: string
   count: number
-  sector?: string
-  logo?: string
+  sector?: string | null
+  logo?: string | null
 }
 
 interface CalculationResult {
@@ -57,24 +57,14 @@ function createCalculationResult(
 }
 
 export function EtfReplicator() {
-  const [etfs, setEtfs] = useState<ETF[]>([])
-  const [loading, setLoading] = useState(true)
-  const [selectedEtfName, setSelectedEtfName] = useState<string>("")
+  const etfs: ETF[] = etfData
+  const [selectedEtfName, setSelectedEtfName] = useState<string>(
+    etfData[0]?.name ?? ""
+  )
   const [inputMode, setInputMode] = useState<InputMode>("cash")
   const [cashAmount, setCashAmount] = useState<string>("")
   const [units, setUnits] = useState<string>("")
   const [hasCalculated, setHasCalculated] = useState(false)
-
-  useEffect(() => {
-    fetchETFs()
-      .then((data) => {
-        setEtfs(data)
-        if (data.length > 0) {
-          setSelectedEtfName(data[0].name)
-        }
-      })
-      .finally(() => setLoading(false))
-  }, [])
 
   const selectedEtf = useMemo(
     () => etfs.find((e) => e.name === selectedEtfName),
@@ -144,19 +134,6 @@ export function EtfReplicator() {
     }
     return units.trim() === "" || parseFloat(units) <= 0
   }, [inputMode, cashAmount, units])
-
-  if (loading) {
-    return (
-      <div
-        className="fixed inset-0 z-50 flex min-h-svh items-center justify-center bg-background"
-        role="status"
-        aria-label="Loading ETF data"
-      >
-        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
-        <span className="sr-only">Loading ETF data</span>
-      </div>
-    )
-  }
 
   return (
     <div className="mx-auto w-full max-w-2xl space-y-6">

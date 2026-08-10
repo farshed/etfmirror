@@ -10,7 +10,8 @@
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview",
-    "deploy": "bun run build && bunx gh-pages -d dist -t"
+    "fetch:etfs": "bun scripts/fetch-etfs.ts",
+    "deploy": "bun run fetch:etfs && bun run build && bunx gh-pages -d dist -t"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",

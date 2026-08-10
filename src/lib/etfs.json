@@ -1,0 +1,752 @@
+[
+  {
+    "name": "ACIETF",
+    "price": 16.22,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-state-oil-co.svg",
+        "name": "PSO",
+        "count": 50,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 36,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/millat-tractors.svg",
+        "name": "MTL",
+        "count": 53,
+        "sector": "Automobile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-cement-co.svg",
+        "name": "FCCL",
+        "count": 254,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
+        "name": "MLCF",
+        "count": 139,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/dg-khan-cement-company.svg",
+        "name": "DGKC",
+        "count": 64,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/sazgar-engineering-works.svg",
+        "name": "SAZEW",
+        "count": 6,
+        "sector": "Automobile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/interloop.svg",
+        "name": "ILP",
+        "count": 83,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/the-searle-company.svg",
+        "name": "SEARL",
+        "count": 87,
+        "sector": "Pharma"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/sui-northern-gas-pipelines.svg",
+        "name": "SNGP",
+        "count": 75,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/nishat-mills.svg",
+        "name": "NML",
+        "count": 46,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/NATF.svg",
+        "name": "NATF",
+        "count": 17,
+        "sector": "Food"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/glaxosmithkline-pakistan.svg",
+        "name": "GLAXO",
+        "count": 18,
+        "sector": "Pharma"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/international-steels.svg",
+        "name": "ISL",
+        "count": 45,
+        "sector": "Engineering"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/kohinoor-textiles-mills.svg",
+        "name": "KTML",
+        "count": 79,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mughal-iron-and-steel-industries.svg",
+        "name": "MUGHAL",
+        "count": 34,
+        "sector": "Engineering"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-foods.svg",
+        "name": "FFL",
+        "count": 149,
+        "sector": "Food"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/gul-ahmed-textile-mills.svg",
+        "name": "GATM",
+        "count": 54,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/aisha-steel-mills.svg",
+        "name": "ASL",
+        "count": 96,
+        "sector": "Engineering"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/crescent-steel-and-allied-products.svg",
+        "name": "CSAP",
+        "count": 10,
+        "sector": "Engineering"
+      }
+    ]
+  },
+  {
+    "name": "JSGBETF",
+    "price": 42.86,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 105,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mcb-bank.svg",
+        "name": "MCB",
+        "count": 124,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/habib-bank.svg",
+        "name": "HBL",
+        "count": 159,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/bank-al-habib.svg",
+        "name": "BAHL",
+        "count": 283,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
+        "name": "UBL",
+        "count": 107,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/bank-of-punjab.svg",
+        "name": "BOP",
+        "count": 1418,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/alfalah-consumer-etf.svg",
+        "name": "BAFL",
+        "count": 834,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/NBP.svg",
+        "name": "NBP",
+        "count": 195,
+        "sector": "Banking"
+      }
+    ]
+  },
+  {
+    "name": "JSMFETF",
+    "price": 10.49,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
+        "name": "UBL",
+        "count": 40,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 22,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-refinery.svg",
+        "name": "PRL",
+        "count": 164,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/habib-bank.svg",
+        "name": "HBL",
+        "count": 31,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/CNERGY.svg",
+        "name": "CNERGY",
+        "count": 731,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/GAL.svg",
+        "name": "GAL",
+        "count": 15,
+        "sector": "Automobile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/attock-refinery.svg",
+        "name": "ATRL",
+        "count": 9,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/national-refinery.svg",
+        "name": "NRL",
+        "count": 19,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-telecommunication-company.svg",
+        "name": "PTC",
+        "count": 111,
+        "sector": "Tech"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ghandhara-nissan.svg",
+        "name": "GHNI",
+        "count": 5,
+        "sector": "Automobile"
+      }
+    ]
+  },
+  {
+    "name": "MIIETF",
+    "price": 17.09,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
+        "name": "FFC",
+        "count": 46,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
+        "name": "ENGROH",
+        "count": 53,
+        "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 24,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
+        "name": "HUBC",
+        "count": 55,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 26,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/oil-and-gas-develop-gdr-reg-s.svg",
+        "name": "OGDC",
+        "count": 35,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mari-petroleum-company.svg",
+        "name": "MARI",
+        "count": 15,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-petroleum.svg",
+        "name": "PPL",
+        "count": 40,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
+        "name": "SYS",
+        "count": 48,
+        "sector": "Tech"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/engro-powergen-qadirpur.svg",
+        "name": "EFERT",
+        "count": 34,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-state-oil-co.svg",
+        "name": "PSO",
+        "count": 12,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/service-industries.svg",
+        "name": "SRVI",
+        "count": 2,
+        "sector": null
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/millat-tractors.svg",
+        "name": "MTL",
+        "count": 10,
+        "sector": "Automobile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/dg-khan-cement-company.svg",
+        "name": "DGKC",
+        "count": 14,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/attock-refinery.svg",
+        "name": "ATRL",
+        "count": 3,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fatima-fertilizer-company.svg",
+        "name": "FATIMA",
+        "count": 18,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-cement-co.svg",
+        "name": "FCCL",
+        "count": 49,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
+        "name": "MLCF",
+        "count": 27,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/cherat-cement-co.svg",
+        "name": "CHCC",
+        "count": 8,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/faysal-bank.svg",
+        "name": "FABL",
+        "count": 25,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/sazgar-engineering-works.svg",
+        "name": "SAZEW",
+        "count": 1,
+        "sector": "Automobile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/javedan-oration.svg",
+        "name": "JVDC",
+        "count": 12,
+        "sector": null
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/sui-northern-gas-pipelines.svg",
+        "name": "SNGP",
+        "count": 17,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/glaxosmithkline-pakistan.svg",
+        "name": "GLAXO",
+        "count": 5,
+        "sector": "Pharma"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pak-elektron.svg",
+        "name": "PAEL",
+        "count": 38,
+        "sector": "Electrical"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/interloop.svg",
+        "name": "ILP",
+        "count": 15,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/nishat-mills.svg",
+        "name": "NML",
+        "count": 9,
+        "sector": "Textile"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/colgate-palmolive.svg",
+        "name": "COLG",
+        "count": 1,
+        "sector": "Food"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/k-electric.svg",
+        "name": "KEL",
+        "count": 156,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/the-searle-company.svg",
+        "name": "SEARL",
+        "count": 11,
+        "sector": "Pharma"
+      }
+    ]
+  },
+  {
+    "name": "MZNPETF",
+    "price": 18.1,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
+        "name": "FFC",
+        "count": 47,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
+        "name": "ENGROH",
+        "count": 84,
+        "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 39,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
+        "name": "HUBC",
+        "count": 85,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 38,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/oil-and-gas-develop-gdr-reg-s.svg",
+        "name": "OGDC",
+        "count": 52,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mari-petroleum-company.svg",
+        "name": "MARI",
+        "count": 19,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-petroleum.svg",
+        "name": "PPL",
+        "count": 54,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
+        "name": "MLCF",
+        "count": 69,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-state-oil-co.svg",
+        "name": "PSO",
+        "count": 20,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/dg-khan-cement-company.svg",
+        "name": "DGKC",
+        "count": 31,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/attock-refinery.svg",
+        "name": "ATRL",
+        "count": 6,
+        "sector": "Refinery"
+      }
+    ]
+  },
+  {
+    "name": "NBPGETF",
+    "price": 28.18,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/oil-and-gas-develop-gdr-reg-s.svg",
+        "name": "OGDC",
+        "count": 82,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
+        "name": "UBL",
+        "count": 55,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
+        "name": "FFC",
+        "count": 46,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-petroleum.svg",
+        "name": "PPL",
+        "count": 110,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
+        "name": "HUBC",
+        "count": 102,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/NBP.svg",
+        "name": "NBP",
+        "count": 109,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 33,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 39,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
+        "name": "ENGROH",
+        "count": 64,
+        "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mari-petroleum-company.svg",
+        "name": "MARI",
+        "count": 24,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/habib-bank.svg",
+        "name": "HBL",
+        "count": 45,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
+        "name": "SYS",
+        "count": 75,
+        "sector": "Tech"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mcb-bank.svg",
+        "name": "MCB",
+        "count": 23,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/bank-al-habib.svg",
+        "name": "BAHL",
+        "count": 46,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/engro-powergen-qadirpur.svg",
+        "name": "EFERT",
+        "count": 43,
+        "sector": "Fertilizer"
+      }
+    ]
+  },
+  {
+    "name": "NITGETF",
+    "price": 34.8,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
+        "name": "FFC",
+        "count": 99,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
+        "name": "UBL",
+        "count": 102,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
+        "name": "ENGROH",
+        "count": 112,
+        "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 52,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
+        "name": "HUBC",
+        "count": 113,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/oil-and-gas-develop-gdr-reg-s.svg",
+        "name": "OGDC",
+        "count": 75,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 51,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/habib-bank.svg",
+        "name": "HBL",
+        "count": 68,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mcb-bank.svg",
+        "name": "MCB",
+        "count": 48,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/mari-petroleum-company.svg",
+        "name": "MARI",
+        "count": 28,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-petroleum.svg",
+        "name": "PPL",
+        "count": 78,
+        "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/bank-al-habib.svg",
+        "name": "BAHL",
+        "count": 90,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
+        "name": "SYS",
+        "count": 103,
+        "sector": "Tech"
+      }
+    ]
+  },
+  {
+    "name": "UBLPETF",
+    "price": 30.2,
+    "constituents": [
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
+        "name": "UBL",
+        "count": 97,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
+        "name": "FFC",
+        "count": 79,
+        "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
+        "name": "ENGROH",
+        "count": 139,
+        "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 65,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
+        "name": "HUBC",
+        "count": 140,
+        "sector": "Energy"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/lucky-cement.svg",
+        "name": "LUCK",
+        "count": 63,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/habib-bank.svg",
+        "name": "HBL",
+        "count": 84,
+        "sector": "Banking"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
+        "name": "SYS",
+        "count": 127,
+        "sector": "Tech"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/engro-powergen-qadirpur.svg",
+        "name": "EFERT",
+        "count": 87,
+        "sector": "Fertilizer"
+      }
+    ]
+  }
+]
