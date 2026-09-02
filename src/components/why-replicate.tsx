@@ -26,31 +26,31 @@ const reasons: Reason[] = [
     icon: TrendingDown,
     title: "No management fee eating into compounding",
     description:
-      "The expense ratio is charged every year on your entire holding, not just on your gains. Avoiding it leaves more capital invested, and the difference widens the longer your horizon.",
+      "Avoiding the expense ratio leaves more capital invested, and the difference widens with a longer horizon or a bigger portfolio.",
   },
   {
     icon: Vote,
     title: "Direct ownership of the underlying stocks",
     description:
-      "You get direct ownership of the companies you hold, so you get voting rights and the right to participate in general meetings.",
+      "Directly owning companies gives you voting rights and the right to participate in general meetings.",
   },
   {
     icon: HandCoins,
     title: "Receive dividends as they are paid",
     description:
-      "With direct ownership, dividends reach you as soon as they are paid. You do not have to wait for the ETF's annual dividend distribution.",
+      "Dividends reach you as soon as they are paid. No need to wait for the ETF's annual dividend distribution.",
   },
   {
     icon: Wallet,
     title: "No cash component",
     description:
-      "Funds keep a slice of your investment as cash to handle redemptions and expenses, and that slice just sits there making no return. Replication keeps every rupee in the market.",
+      "Funds keep a cash component to handle redemptions and expenses, which just sits there making no return. Replication keeps every rupee in the market.",
   },
   {
     icon: SlidersHorizontal,
     title: "Full control over your portfolio",
     description:
-      "Hold the index on your own terms. You can exclude sectors or individual stocks you would rather not own and rebalance on your own schedule instead of the fund's.",
+      "Hold the index on your own terms. Exclude sectors or individual stocks you would rather not own and rebalance on your own schedule instead of the fund's.",
   },
   {
     icon: Scissors,
