@@ -1,7 +1,7 @@
 [
   {
     "name": "ACIETF",
-    "price": 17.3,
+    "price": 17.11,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/pakistan-state-oil-co.svg",
@@ -22,15 +22,15 @@
         "sector": "Cement"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
-        "name": "MLCF",
-        "count": 139,
-        "sector": "Cement"
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-cement-co.svg",
         "name": "FCCL",
         "count": 254,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
+        "name": "MLCF",
+        "count": 139,
         "sector": "Cement"
       },
       {
@@ -127,7 +127,7 @@
   },
   {
     "name": "JSGBETF",
-    "price": 40.66,
+    "price": 40.65,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/bank-of-punjab.svg",
@@ -181,7 +181,7 @@
   },
   {
     "name": "JSMFETF",
-    "price": 11.57,
+    "price": 11.53,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/united-bank.svg",
@@ -202,15 +202,15 @@
         "sector": "Banking"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/CNERGY.svg",
-        "name": "CNERGY",
-        "count": 731,
-        "sector": "Refinery"
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/attock-refinery.svg",
         "name": "ATRL",
         "count": 9,
+        "sector": "Refinery"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/CNERGY.svg",
+        "name": "CNERGY",
+        "count": 731,
         "sector": "Refinery"
       },
       {
@@ -247,7 +247,7 @@
   },
   {
     "name": "MIIETF",
-    "price": 16.52,
+    "price": 16.5,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
@@ -346,15 +346,15 @@
         "sector": "Fertilizer"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
-        "name": "MLCF",
-        "count": 27,
-        "sector": "Cement"
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-cement-co.svg",
         "name": "FCCL",
         "count": 49,
+        "sector": "Cement"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/maple-leaf-cement-factory.svg",
+        "name": "MLCF",
+        "count": 27,
         "sector": "Cement"
       },
       {
@@ -376,16 +376,16 @@
         "sector": "Automobile"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/javedan-oration.svg",
-        "name": "JVDC",
-        "count": 12,
-        "sector": null
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/sui-northern-gas-pipelines.svg",
         "name": "SNGP",
         "count": 17,
         "sector": "Oil & Gas"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/javedan-oration.svg",
+        "name": "JVDC",
+        "count": 12,
+        "sector": null
       },
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/glaxosmithkline-pakistan.svg",
@@ -433,7 +433,7 @@
   },
   {
     "name": "MZNPETF",
-    "price": 17.74,
+    "price": 17.79,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
@@ -511,7 +511,7 @@
   },
   {
     "name": "NBPGETF",
-    "price": 27.06,
+    "price": 28.15,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/oil-and-gas-develop-gdr-reg-s.svg",
@@ -691,7 +691,7 @@
   },
   {
     "name": "UBLPETF",
-    "price": 29.07,
+    "price": 29.1,
     "constituents": [
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/fauji-fertilizer-co.svg",
@@ -706,16 +706,16 @@
         "sector": "Banking"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
-        "name": "MEBL",
-        "count": 65,
-        "sector": "Banking"
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/ENGROH.svg",
         "name": "ENGROH",
         "count": 139,
         "sector": "Investment"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/meezan-pakistan-etf.svg",
+        "name": "MEBL",
+        "count": 65,
+        "sector": "Banking"
       },
       {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/hub-power-co.svg",
@@ -736,16 +736,16 @@
         "sector": "Banking"
       },
       {
-        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
-        "name": "SYS",
-        "count": 127,
-        "sector": "Tech"
-      },
-      {
         "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/engro-powergen-qadirpur.svg",
         "name": "EFERT",
         "count": 87,
         "sector": "Fertilizer"
+      },
+      {
+        "logo": "https://d1ehrfgrja6bld.cloudfront.net/company_logos/systems.svg",
+        "name": "SYS",
+        "count": 127,
+        "sector": "Tech"
       }
     ]
   }
